@@ -38,8 +38,8 @@ header{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,2
 .ust.outline{border:1px solid rgba(202,168,90,.45);color:var(--g2)}
 /* ①②修正：30分を主役に、週2〜3回を削除 */
 .hero-catch{font-size:clamp(13px,3.5vw,16px);font-weight:500;color:rgba(255,255,255,.65);letter-spacing:.1em;margin-bottom:10px}
-.hero-h1{font-size:clamp(34px,9.5vw,52px);font-weight:700;line-height:1.1;color:#fff;margin-bottom:6px}
-.hero-h1 em{font-style:normal;color:var(--g2)}
+.hero-h1{font-size:clamp(36px,10vw,56px);font-weight:700;line-height:1.1;color:#fff;margin-bottom:8px}
+.hero-h1 em{font-style:normal;color:var(--g2);display:block;font-size:1.05em}
 .hero-desc{font-size:15px;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:4px}
 /* ⑨修正：徒歩1分の価値を強化 */
 .hero-access{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.55);letter-spacing:.08em;margin-bottom:20px}
@@ -315,9 +315,9 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
       <span class="ust red">先着20〜30名 期間限定</span>
       <span class="ust outline">用賀駅 徒歩1分</span>
     </div>
-    <p class="hero-catch">低酸素トレーニングジム　AIRNIX 用賀</p>
-    <h1 class="hero-h1"><em>30分で</em>効率よく運動</h1>
-    <p class="hero-desc">忙しい方でも続けやすい<br>1回30分・完全予約制</p>
+    <p class="hero-catch">低酸素トレーニングジム｜AIRNIX 用賀店</p>
+    <h1 class="hero-h1"><em>30分で</em>効率よく<br>運動する</h1>
+    <p class="hero-desc">忙しい方でも続く<br>1回30分トレーニング</p>
     <!-- ⑨修正：徒歩1分の価値を強化 -->
     <p class="hero-access">
       <span class="hero-access-pin"><svg viewBox="0 0 36 36" fill="none" width="36" height="36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3C13 3 9 7 9 12C9 19 18 31 18 31C18 31 27 19 27 12C27 7 23 3 18 3Z"/><circle cx="18" cy="12" r="4"/></svg></span>
@@ -364,7 +364,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
         <p class="pqc-name">LIGHT</p>
         <div class="pqc-price"><span class="py">¥</span>3,980<span class="pu"> / 月</span></div>
         <ul class="pqc-tags"><li>通い放題 / 1日1回</li><li>2年契約</li></ul>
-        <p class="pqc-desc">まず始めたい方向けのお得プラン</p>
+        <p class="pqc-desc">コストを抑えて<br>まず始めたい方へ</p>
         <p class="pqc-note">新規限定・先着20〜30名</p>
       </div>
       <div class="pqc pop">
@@ -378,7 +378,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
         <p class="pqc-name">PREMIUM</p>
         <div class="pqc-price"><span class="py">¥</span>9,800<span class="pu"> / 月</span></div>
         <ul class="pqc-tags"><li>通い放題 / 1日2回</li><li>1年契約</li></ul>
-        <p class="pqc-desc">しっかり運動したい方向け</p>
+        <p class="pqc-desc">しっかり通いたい方向け</p>
       </div>
     </div>
   </div>
@@ -391,7 +391,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <!-- こんな方へ -->
 <section id="problem">
   <div class="inn">
-    <p class="slbl r">For Those Who</p>
+    <p class="slbl r">こんな方へ</p>
     <h2 class="sh r" data-d="1">こんな方におすすめ</h2>
     <div class="sdv"></div>
     <div class="pain-list r" data-d="2">
@@ -411,7 +411,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <!-- 特徴 -->
 <section id="features" class="alt">
   <div class="inn">
-    <p class="slbl r">Features</p>
+    <p class="slbl r">特　徴</p>
     <h2 class="sh r" data-d="1">忙しい方でも続けやすい理由</h2>
     <div class="sdv"></div>
     <div class="feat-grid r" data-d="2">
@@ -451,7 +451,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <!-- 低酸素説明 -->
 <section id="hypoxia">
   <div class="inn">
-    <p class="slbl r">About Hypoxia</p>
+    <p class="slbl r">低酸素とは</p>
     <h2 class="sh r" data-d="1">低酸素トレーニングとは</h2>
     <div class="sdv"></div>
     <div class="hyp-intro r" data-d="1">
@@ -480,6 +480,11 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
         <p class="hyp-ben-sub">高い運動効果</p>
       </div>
     </div>
+    <!-- CTA：低酸素を知った直後に予約を促す -->
+    <div class="cbtn-wrap r" data-d="3">
+      <a href="https://mypage.airnix.jp/register/" class="cbtn">無料体験を予約する</a>
+      <p class="cbtn-note">低酸素トレーニングを<strong>30分体験</strong>できます</p>
+    </div>
   </div>
 </section>
 
@@ -506,18 +511,22 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <!-- 比較 -->
 <section id="comparison">
   <div class="inn">
-    <p class="slbl r">Comparison</p>
+    <p class="slbl r">比　較</p>
     <h2 class="sh r" data-d="1">通常のジムとの違い</h2>
     <div class="sdv"></div>
     <div class="r" data-d="2"><svg viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block"><rect x="0" y="0" width="168" height="36" rx="4" fill="#e4dfd7"/><rect x="172" y="0" width="168" height="36" rx="4" fill="#b08a3c"/><text x="84" y="23" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#4e4b44">通常のジム</text><text x="256" y="23" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#fff">AIRNIX</text><line x1="170" y1="0" x2="170" y2="240" stroke="#e4dfd7" stroke-width="2"/><rect x="0" y="40" width="168" height="44" fill="#f9f8f5"/><rect x="172" y="40" width="168" height="44" fill="#fdf8ee"/><text x="32" y="58" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#96938c">トレーニング時間</text><text x="32" y="74" font-family="'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#4e4b44">60〜90分</text><text x="204" y="58" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#b08a3c">トレーニング時間</text><text x="204" y="74" font-family="'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#b08a3c">たった30分</text><rect x="0" y="88" width="168" height="44" fill="#fff"/><rect x="172" y="88" width="168" height="44" fill="#fff"/><text x="32" y="106" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#96938c">運動効果</text><text x="32" y="122" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#4e4b44">効果を感じにくい</text><text x="204" y="106" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#b08a3c">運動効果</text><text x="204" y="122" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#b08a3c">低酸素で効率的</text><rect x="0" y="136" width="168" height="44" fill="#f9f8f5"/><rect x="172" y="136" width="168" height="44" fill="#fdf8ee"/><text x="32" y="154" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#96938c">予約</text><text x="32" y="170" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#4e4b44">自由来店（混雑あり）</text><text x="204" y="154" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#b08a3c">予約</text><text x="204" y="170" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#b08a3c">完全予約制</text><rect x="0" y="184" width="168" height="44" fill="#fff"/><rect x="172" y="184" width="168" height="44" fill="#fff"/><text x="32" y="202" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#96938c">初心者への対応</text><text x="32" y="218" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#4e4b44">自分で判断が必要</text><text x="204" y="202" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#b08a3c">初心者への対応</text><text x="204" y="218" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#b08a3c">ウォーキングからOK</text></svg></div>
     <p style="font-size:15px;color:var(--s);line-height:var(--lh);margin-top:14px" class="r" data-d="3">忙しい方でも、初めての方でも継続しやすいジムです。</p>
+    <div class="cbtn-wrap r" data-d="3">
+      <a href="https://mypage.airnix.jp/register/" class="cbtn">無料体験を予約する</a>
+      <p class="cbtn-note">まずは体験から。<strong>初心者歓迎・ウォーキングからOK</strong></p>
+    </div>
   </div>
 </section>
 
 <!-- 施設 -->
 <section id="facility" class="alt">
   <div class="inn">
-    <p class="slbl r">Facility</p>
+    <p class="slbl r">施　設</p>
     <h2 class="sh r" data-d="1">施設紹介</h2>
     <div class="sdv"></div>
     <div class="stat-row r" data-d="1">
@@ -538,7 +547,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <!-- ⑦修正：口コミ（利用頻度・目的・年齢タグ）-->
 <section id="reviews" class="alt">
   <div class="inn">
-    <p class="slbl r">Voice</p>
+    <p class="slbl r">口コミ</p>
     <h2 class="sh r" data-d="1">ご利用者の声</h2>
     <div class="sdv"></div>
     <div class="rv-list r" data-d="2">
@@ -631,7 +640,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
           <div class="plan-body">
             <div class="pp"><span class="py">¥</span>9,800<span class="pu"> / 月</span></div>
             <ul class="p-tags"><li>通い放題</li><li>1日2回</li><li>1年契約</li><li>用賀店限定</li></ul>
-            <div class="plan-guide">しっかり運動したい方向けのプランです</div>
+            <div class="plan-guide">しっかり通いたい方向けのプランです</div>
           </div>
         </div>
       </div>
@@ -657,13 +666,17 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
     <div class="sdv"></div>
     <div class="r" data-d="2"><svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;display:block;margin:0 auto"><line x1="40" y1="50" x2="40" y2="260" stroke="#e4dfd7" stroke-width="2" stroke-dasharray="4 3"/><circle cx="40" cy="40" r="22" fill="#fdf8ee" stroke="#b08a3c" stroke-width="2"/><text x="40" y="36" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="8" fill="#b08a3c">STEP</text><text x="40" y="48" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#b08a3c">01</text><text x="76" y="34" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#0f0f0f">Web予約</text><text x="76" y="50" font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#96938c">公式サイトから30秒で完了</text><circle cx="40" cy="110" r="22" fill="#f4f2ef" stroke="#e4dfd7" stroke-width="2"/><text x="40" y="106" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="8" fill="#96938c">STEP</text><text x="40" y="118" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#4e4b44">02</text><text x="76" y="104" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#0f0f0f">ご来店</text><text x="76" y="120" font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#96938c">動きやすい服装で。用賀駅1分</text><circle cx="40" cy="180" r="22" fill="#b08a3c" stroke="#b08a3c" stroke-width="2"/><text x="40" y="176" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="8" fill="rgba(255,255,255,.7)">STEP</text><text x="40" y="188" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#fff">03</text><text x="76" y="174" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#b08a3c">30分体験</text><text x="76" y="190" font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#4e4b44">低酸素ルームで実際に体験</text><circle cx="40" cy="250" r="22" fill="#f4f2ef" stroke="#e4dfd7" stroke-width="2"/><text x="40" y="246" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="8" fill="#96938c">STEP</text><text x="40" y="258" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="13" font-weight="700" fill="#4e4b44">04</text><text x="76" y="244" font-family="'Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#0f0f0f">入会案内</text><text x="76" y="260" font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#96938c">当日入会でキャンペーン適用</text></svg></div>
     <p style="font-size:13px;color:var(--m);text-align:center;margin-top:12px;letter-spacing:.1em" class="r" data-d="2">所要時間 約45〜60分・完全予約制</p>
+    <div class="cbtn-wrap r" data-d="3" style="align-items:center;margin-top:20px">
+      <a href="https://mypage.airnix.jp/register/" class="cbtn">無料体験を予約する</a>
+      <p class="cbtn-note">30秒で予約完了</p>
+    </div>
   </div>
 </section>
 
 <!-- ⑤修正：注意事項の軽量化 -->
 <section id="conditions" class="alt">
   <div class="inn">
-    <p class="slbl r">Conditions</p>
+    <p class="slbl r">条　件</p>
     <h2 class="sh r" data-d="1">キャンペーン条件</h2>
     <div class="sdv"></div>
     <div class="conditions-simple r" data-d="2">
@@ -695,9 +708,9 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
       <span>キャンペーン枠が埋まり次第、終了となります</span>
     </div>
     <!-- ⑩修正：CTA直前の強化コピー -->
-    <p class="fcta-lead">気になる方は、まず無料体験をご予約ください。<br>先着枠が埋まり次第終了します。</p>
+    <p class="fcta-lead">先着枠が埋まり次第終了します。<br>気になる方はまず無料体験をご予約ください。</p>
     <p class="fcta-lbl">FREE TRIAL — 無料体験受付中</p>
-    <h2 class="fcta-h">まずは<em>無料体験</em>から</h2>
+    <h2 class="fcta-h"><em>無料体験</em>で<br>実際に試してみませんか</h2>
     <p class="fcta-price">月額 ¥3,980〜<span>（入会金¥0）</span></p>
     <div class="fcta-safety">
       <p class="fcta-safety-ttl">体験について</p>
@@ -708,8 +721,8 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
         <div class="fcta-safety-item"><svg viewBox="0 0 20 20" fill="none" width="20" height="20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8.5"/><polyline points="6,10 9,13 14,7"/></svg>ウォーキングから</div>
       </div>
     </div>
-    <a href="https://mypage.airnix.jp/register/" class="fbtn">まずは無料体験を体験してください</a>
-    <p class="fbtn-sub">低酸素トレーニングを30分体験できます</p>
+    <a href="https://mypage.airnix.jp/register/" class="fbtn">無料体験を予約する</a>
+    <p class="fbtn-sub">まずは無料体験で低酸素トレーニングを体験してください</p>
     <p style="font-size:11px;color:rgba(255,255,255,.22);letter-spacing:.1em;margin-top:12px">用賀店限定　体験当日入会でキャンペーン適用</p>
   </div>
 </section>
@@ -717,7 +730,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <!-- ⑨修正：アクセス（徒歩1分の価値強化）-->
 <section id="access" class="alt">
   <div class="inn">
-    <p class="slbl r">Access</p>
+    <p class="slbl r">アクセス</p>
     <h2 class="sh r" data-d="1">アクセス</h2>
     <div class="sdv"></div>
     <p class="access-station r" data-d="1">東急田園都市線<br><span>用賀駅 徒歩1分</span></p>
