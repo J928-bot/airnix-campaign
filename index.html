@@ -36,15 +36,19 @@ header{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,2
 .ust{display:inline-flex;align-items:center;font-weight:700;font-size:11px;letter-spacing:.14em;padding:5px 11px;border-radius:3px}
 .ust.red{background:var(--r);color:#fff}
 .ust.outline{border:1px solid rgba(202,168,90,.45);color:var(--g2)}
-/* ①②修正：30分を主役に、週2〜3回を削除 */
-.hero-catch{font-size:clamp(13px,3.5vw,16px);font-weight:500;color:rgba(255,255,255,.65);letter-spacing:.1em;margin-bottom:10px}
-.hero-h1{font-size:clamp(36px,10vw,56px);font-weight:700;line-height:1.1;color:#fff;margin-bottom:8px}
-.hero-h1 em{font-style:normal;color:var(--g2);display:block;font-size:1.05em}
-.hero-desc{font-size:15px;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:4px}
-/* ⑨修正：徒歩1分の価値を強化 */
-.hero-access{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.55);letter-spacing:.08em;margin-bottom:20px}
+/* FV：30分を主役・指示書通り構成 */
+/* ① メインコピー */
+.hero-h1{font-size:clamp(36px,10vw,56px);font-weight:700;line-height:1.08;color:#fff;margin-bottom:12px;letter-spacing:-.01em}
+.hero-h1 em{font-style:normal;color:var(--g2)}
+/* ② サブコピー */
+.hero-catch{font-size:15px;font-weight:500;color:rgba(255,255,255,.55);letter-spacing:.08em;margin-bottom:8px}
+.hero-sub1{font-size:var(--body);color:rgba(255,255,255,.78);line-height:1.65;margin-bottom:20px}
+/* ③ 価格 */
+/* ④ 特典：hprice-subで表示 */
+/* ⑤ CTA */
+.hero-access{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.52);letter-spacing:.06em;margin-bottom:16px}
 .hero-access-pin{color:var(--g2)}
-.hero-access strong{color:rgba(255,255,255,.8);font-weight:700}
+.hero-access strong{color:rgba(255,255,255,.78);font-weight:700}
 /* 価格 */
 .hprice{background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.13);border-radius:6px;padding:14px 18px;margin-bottom:18px}
 .hprice-main{display:flex;align-items:baseline;gap:8px;margin-bottom:8px}
@@ -315,18 +319,22 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-body">
+    <!-- urgency バッジ -->
     <div class="urgency-strip">
       <span class="ust red">先着20〜30名 期間限定</span>
       <span class="ust outline">用賀駅 徒歩1分</span>
     </div>
+
+    <!-- ② サブコピー：低酸素は"理由"として先出し -->
     <p class="hero-catch">低酸素トレーニングジム　AIRNIX 用賀</p>
-    <h1 class="hero-h1"><em>30分で</em><br>効率よく運動</h1>
-    <p class="hero-desc">忙しい方でも続けやすい<br>1回30分・完全予約制</p>
-    <!-- ⑨修正：徒歩1分の価値を強化 -->
-    <p class="hero-access">
-      <span class="hero-access-pin"><svg viewBox="0 0 36 36" fill="none" width="36" height="36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3C13 3 9 7 9 12C9 19 18 31 18 31C18 31 27 19 27 12C27 7 23 3 18 3Z"/><circle cx="18" cy="12" r="4"/></svg></span>
-      <span><strong>用賀駅 徒歩1分</strong>　仕事前や帰りでも通いやすい立地</span>
-    </p>
+
+    <!-- ① メインコピー：30分が主役（36px以上） -->
+    <h1 class="hero-h1"><em>30分で</em>効率よく運動</h1>
+
+    <!-- ② サブコピー：続けやすさの理由 -->
+    <p class="hero-sub1">忙しい方でも続けやすい<br>1回30分トレーニング</p>
+
+    <!-- ③ 価格訴求（42px） + ④ 特典：入会金0円 -->
     <div class="hprice">
       <div class="hprice-main">
         <span class="hpi-lbl">月額</span>
@@ -339,14 +347,11 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
         <span class="hpi-free">¥0</span>
       </div>
     </div>
-    <!-- ⑥修正：FV用CTAサブコピー -->
+
+    <!-- ⑤ CTA：無料体験受付中 → ボタン → 補足 -->
+    <p style="font-size:13px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.16em;margin-bottom:10px">無料体験受付中</p>
     <a href="https://mypage.airnix.jp/register/" class="hbtn">無料体験を予約する</a>
-    <p class="cta-hint">（30秒で予約完了）</p>
-    <div class="cta-tags">
-      <span class="cta-tag">初心者歓迎</span>
-      <span class="cta-tag">完全予約制</span>
-      <span class="cta-tag">ウォーキングからOK</span>
-    </div>
+    <p class="cta-hint" style="font-size:13px;text-align:center;margin-top:9px;color:rgba(255,255,255,.5);letter-spacing:.06em">30秒で予約完了・初心者歓迎</p>
   </div>
 </section>
 
