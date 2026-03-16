@@ -274,6 +274,10 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 .flogo img{height:52px;display:block;object-fit:contain}
 .fcopy{font-size:11px;color:var(--m);letter-spacing:.08em;line-height:1.8}
 
+
+/* ⑨ 体験タグ（特徴後の要点整理） */
+.feat-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;margin-bottom:4px}
+.ftag{font-size:12px;font-weight:700;color:var(--g);background:var(--gp);border:1px solid rgba(176,138,60,.3);padding:6px 12px;border-radius:20px;letter-spacing:.06em}
 /* REVEAL */
 .r{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
 .r.on{opacity:1;transform:none}
@@ -315,9 +319,9 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
       <span class="ust red">先着20〜30名 期間限定</span>
       <span class="ust outline">用賀駅 徒歩1分</span>
     </div>
-    <p class="hero-catch">低酸素トレーニングジム｜AIRNIX 用賀店</p>
-    <h1 class="hero-h1"><em>30分で</em>効率よく<br>運動する</h1>
-    <p class="hero-desc">忙しい方でも続く<br>1回30分トレーニング</p>
+    <p class="hero-catch">低酸素トレーニングジム　AIRNIX 用賀</p>
+    <h1 class="hero-h1"><em>30分で</em><br>効率よく運動</h1>
+    <p class="hero-desc">忙しい方でも続けやすい<br>1回30分・完全予約制</p>
     <!-- ⑨修正：徒歩1分の価値を強化 -->
     <p class="hero-access">
       <span class="hero-access-pin"><svg viewBox="0 0 36 36" fill="none" width="36" height="36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3C13 3 9 7 9 12C9 19 18 31 18 31C18 31 27 19 27 12C27 7 23 3 18 3Z"/><circle cx="18" cy="12" r="4"/></svg></span>
@@ -355,7 +359,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <div class="plan-quick r">
   <div class="pq-inner">
     <div class="pq-head">
-      <p class="pq-lbl">料金プラン</p>
+      <p class="pq-lbl">料金プラン（概要）</p>
       <p class="pq-ttl">入会金 <em>¥13,000 → ¥0</em>　＋　Tシャツプレゼント</p>
       <span class="pq-free"><del>¥13,000</del> → <strong>¥0 完全無料</strong>　4〜5月 用賀店限定</span>
     </div>
@@ -440,7 +444,13 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
         </div>
       </div>
     </div>
-    <!-- ⑥修正：特徴後CTA -->
+    <!-- ⑨タグ型要点整理 -->
+    <div class="feat-tags r" data-d="3">
+      <span class="ftag">体験 約45〜60分</span>
+      <span class="ftag">完全予約制</span>
+      <span class="ftag">初心者歓迎</span>
+      <span class="ftag">ウォーキングからOK</span>
+    </div>
     <div class="cbtn-wrap r" data-d="3">
       <a href="https://mypage.airnix.jp/register/" class="cbtn">無料体験を予約する</a>
       <p class="cbtn-note">ウォーキングから体験できます</p>
@@ -494,10 +504,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
     <p class="sci-lbl r">低酸素トレーニングの考え方</p>
     <h2 class="sci-h r" data-d="1">科学的な背景</h2>
     <div class="sci-dv"></div>
-    <p class="sci-body r" data-d="1">
-      低酸素トレーニングは、高地トレーニングの考え方をもとに活用されています。<br><br>
-      AIRNIXでは標高2,500〜3,000m相当の環境で、短時間でも効率よく運動できるよう設計されています。
-    </p>
+    <p class="sci-body r" data-d="1">低酸素トレーニングは、高地トレーニングの考え方をもとに活用されています。<br><br>AIRNIXでは標高2,500〜3,000m相当の環境で、<br>短時間でも効率よく運動できるよう設計しています。</p>
     <p class="sci-note r" data-d="2">
       ※効果には個人差があります<br>
       ※参考分野：スポーツ科学 / 高地トレーニング研究 / 運動生理学
@@ -609,7 +616,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
 <!-- プラン詳細（⑧修正：日本語見出し・③修正：選び方説明）-->
 <section id="plans" style="padding:0">
   <div class="plan-hdr r">
-    <p class="ph-lbl">料金プラン — 期間限定</p>
+    <p class="ph-lbl">料金プラン（詳細）</p>
     <p class="ph-ttl">入会金<em> ¥13,000 → ¥0</em>　Tシャツもプレゼント</p>
     <p class="ph-note"><del>¥13,000</del> → <strong>¥0 完全無料</strong></p>
   </div>
@@ -708,7 +715,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
       <span>キャンペーン枠が埋まり次第、終了となります</span>
     </div>
     <!-- ⑩修正：CTA直前の強化コピー -->
-    <p class="fcta-lead">先着枠が埋まり次第終了します。<br>気になる方はまず無料体験をご予約ください。</p>
+    <p class="fcta-lead">先着枠が埋まり次第終了します。<br>気になる方は、まず無料体験をご予約ください。</p>
     <p class="fcta-lbl">FREE TRIAL — 無料体験受付中</p>
     <h2 class="fcta-h"><em>無料体験</em>で<br>実際に試してみませんか</h2>
     <p class="fcta-price">月額 ¥3,980〜<span>（入会金¥0）</span></p>
@@ -722,7 +729,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
       </div>
     </div>
     <a href="https://mypage.airnix.jp/register/" class="fbtn">無料体験を予約する</a>
-    <p class="fbtn-sub">まずは無料体験で低酸素トレーニングを体験してください</p>
+    <p class="fbtn-sub">まずは無料体験で、低酸素トレーニングを体験してください</p>
     <p style="font-size:11px;color:rgba(255,255,255,.22);letter-spacing:.1em;margin-top:12px">用賀店限定　体験当日入会でキャンペーン適用</p>
   </div>
 </section>
@@ -734,7 +741,7 @@ footer{padding:30px 18px;background:var(--off);border-top:1px solid var(--line);
     <h2 class="sh r" data-d="1">アクセス</h2>
     <div class="sdv"></div>
     <p class="access-station r" data-d="1">東急田園都市線<br><span>用賀駅 徒歩1分</span></p>
-    <p class="access-lead r" data-d="1">仕事前や仕事帰りでも通いやすい立地です。<br>駅を出てすぐなので、忙しい方でも無理なく続けられます。</p>
+    <p class="access-lead r" data-d="1">用賀駅徒歩1分だから、<br>仕事前・仕事帰りでも通いやすい立地です。<br><span style="font-size:13px;color:var(--m)">駅を出てすぐなので、忙しい方でも無理なく続けられます。</span></p>
     <address class="addr r" data-d="2">〒158-0097　東京都世田谷区用賀4-3-8　SIビル1F</address>
     <div class="r" data-d="3">
       <iframe src="https://maps.google.com/maps?q=AIRNIX+用賀店+東京都世田谷区用賀4-3-8&output=embed&hl=ja" width="100%" height="300" style="border:1px solid var(--line);display:block;border-radius:4px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
